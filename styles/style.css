@@ -1,0 +1,296 @@
+/* fonts */
+/* Raleway, Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* basic */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+p, br {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 56px;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+button {
+	font-family: "Open Sans";
+	background: none;
+	border-radius: 0;
+	border: none;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	padding: 0 15px;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.btn a {
+	width: 270px;
+	height: 58px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #EC7979;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Open Sans";
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 600;
+}
+
+section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 30px 0px;
+}
+
+.bcg--gray {
+	background: #F5F5F5;
+	padding: 100px 0 50px;
+}
+
+.flex {
+	display: flex;
+}
+
+/* landing */
+.tabs__buttons {
+	display: flex;
+}
+
+.tab {
+	width: calc(100% / 6);
+	border-bottom: 1px solid #C6CBCD;
+}
+
+.tab button {
+	width: 100%;
+	text-transform: uppercase;
+	padding: 10px 15px;
+}
+
+.tab.active {
+	border: 1px solid #C6CBCD;
+	border-bottom: 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.tabs__content {
+	border: 1px solid #C6CBCD;
+	border-top: 0;
+	display: flex;
+	gap: 30px;
+}
+
+.tabs__left {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: calc(60% - 30px);
+	padding: 50px 0px 50px 100px;
+}
+
+.tabs__left h3 {
+	margin-bottom: 30px;
+}
+
+.tabs__right {
+	width: 40%;
+}
+
+.tabs__right img {
+	object-fit: cover;
+	height: 100%;
+}
+
+
+
+
+
+.services {
+	padding: 30px 0px;
+	vertical-align: top;
+}
+
+.services__elements {
+	margin-top: 40px;
+}
+
+.services__elem {
+	display: inline-block;
+	width: calc(33.3% - 3px);
+	padding: 15px;
+	baseline-source: first;
+	text-align: center;
+}
+
+.block__head {
+	text-align: center;
+}
+
+.block__head h2 {
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 60px;
+	margin-bottom: 40px;
+}
+
+.block__head h2::after {
+	content: "";
+	width: 170px;
+	height: 1px;
+	background: #EC7979;
+	position: absolute;
+	left: calc(50% - 85px);
+	bottom: 0;
+}
+
+.block__head p {
+	color: #86878B;
+}
+
+.services__border {
+	border: 1px solid #EC7979;
+	width: 170px;
+	margin: 40px auto;
+}
+
+.services__image {
+	margin: 0 auto 40px auto;
+	display: inline-block;
+	border-radius: 100px;
+	border: 1px solid #EC7979;
+}
+
+.services__image img {	
+	padding: 10px;
+	width: 82px;
+	height: 82px;
+}
+
+.services__subhead {
+	margin-bottom: 15px;
+}
+
+.services__subhead strong {
+	font-weight: 700;
+	font-family: "Open Sans";
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.services__text {
+	text-align: center;
+	margin-top: 40px;
+}
+
+svg {
+	padding: 5px;
+	border: 2px solid #000;
+	border-radius: 60px;
+	background: #fff;
+	fill: red;
+}
+
+/* mobile */
+@media (max-width: 750px) {
+	.services__elem {
+		display: block;
+		width: 100%;
+	}
+}
+
+
+
+.prices__body {
+	justify-content: space-between;
+	margin-top: 80px;
+}
+
+.prices__column {
+	width: calc((100% / 3) - 15px);
+	text-align: center;
+	transition: .5s;
+}
+
+.prices-column__head p {
+	background: #333;
+	color: #fff;
+	border: 1px solid #F5F5F5;
+}
+
+.prices-column__head p:first-child {
+	font-weight: 700;
+	font-size: 24px;
+	padding: 20px;
+}
+
+.prices-column__head p:last-child {
+	color: #FFFFFF80;
+	padding: 15px 0;
+}
+
+.price {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	padding: 30px 0;
+}
+
+.price::before {
+	content: "$";
+}
+
+.prices-column__body li {
+	padding: 15px;
+	border-width: 1px 0px;
+	border-style: solid;
+	border-color: #F5F5F5;
+	color: #86878B;
+	background: #fff;
+	text-transform: capitalize;
+}
+
+.prices__column:hover {
+	margin-bottom: 30px;
+	margin-top: -30px;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
